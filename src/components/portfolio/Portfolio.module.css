@@ -44,7 +44,7 @@
 }
 
 .content {
-    padding-right: 80px;
+    padding-right: 120px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -64,8 +64,14 @@
     flex-direction: row;
 }
 
-.card:nth-child(2n).content {
+.card:nth-child(2n) .content {
     align-items: flex-start;
+    padding-right: unset;
+    padding-left: 120px;
+}
+
+.card:nth-child(2n) .content p{
+    text-align: left;
 }
 
 .line {
