@@ -4,6 +4,7 @@ import { fetchData } from './util/api.js';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import Services from './components/services/Services';
+import Portfolio from './components/portfolio/Portfolio';
 import appData from './data.json';
 
 import './App.css';
@@ -31,6 +32,7 @@ function App() {
       <Header logo={data.company_data.logo} menuItems={data.main_menu} />
       <Hero heroData={data.hero} />
       <Services servicesData={data.services} />
+      <Portfolio portfolioData={data.portfolio} />
     </>
   );
 }
