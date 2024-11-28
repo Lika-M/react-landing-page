@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 import { fetchData } from './util/api.js';
 import Header from './components/header/Header';
+import Hero from './components/hero/Hero';
 import appData from './data.json';
 
 import './App.css';
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       <Header logo={data.company_data.logo} menuItems={data.main_menu} />
+      <Hero heroData={data.hero} />
     </>
   );
 }
