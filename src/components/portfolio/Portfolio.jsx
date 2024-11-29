@@ -13,9 +13,6 @@ const Portfolio = ({ portfolioData }) => {
             <div className={styles.projects}>
                 {portfolioData.items.map((item, index) => (
                     <div key={index} className={styles.card}>
-                        <div>
-                            <img src={item.image} alt={item.title} className={styles.image} />
-                        </div>
                         <div className={styles.content}>
                             <h2>{item.title}</h2>
                             <p className={styles.line}></p>
@@ -25,6 +22,9 @@ const Portfolio = ({ portfolioData }) => {
                                     {item.buttonLabel}
                                 </a>
                             </div>
+                        </div>
+                        <div>
+                            <img src={item.image} alt={item.title} className={styles.image} />
                         </div>
                     </div>
                 ))}

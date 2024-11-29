@@ -123,3 +123,28 @@
   max-height: 1000px;
   padding: 10px 20px 20px 20px;
 }
+
+@media screen and (max-width: 480px){
+  .agencyServices {
+    padding: 10px 0 80px 0;
+  }
+
+  .container {
+    width: 480px;
+  }
+
+  .wrapper {
+    flex-direction: column-reverse;
+    padding: unset;
+  }
+
+  .wrapper img {
+    width: 90%;
+  }
+
+  .accordion {
+    width: 480px;
+    padding: 0 20px 0 20px;
+    
+  }
+}

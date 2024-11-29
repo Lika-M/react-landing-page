@@ -1,4 +1,4 @@
-.ready{
+.ready {
     background: url('../../assets/chromeye_assignment_desktopbgbanner_v1.jpg') no-repeat center center;
     background-size: cover;
     padding: 130px 0;
@@ -47,4 +47,22 @@
 .ctaButton:hover {
     background-color: #e0f7ff;
     color: #005f87;
+}
+
+@media screen and (max-width: 480px) {
+    .ready {
+        background: url('../../assets/chromeye_assignment_mobilebgbanner_v1.svg') no-repeat center center;
+        padding: 60px 0;
+    }
+    .container {
+        max-width: 430px;
+        height: 372px;
+    }
+
+    .description {
+        margin: 0;
+        line-height: 24px;
+        margin-bottom: 28px;
+    }
+
 }
