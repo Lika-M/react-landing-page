@@ -24,7 +24,7 @@
     font-size: 18px;
     line-height: 24px;
     display: inline-block;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
 }
 
 .card {
@@ -57,6 +57,7 @@
 .content h2 {
     font-size: 36px;
     font-weight: 700;
+    margin-block: 15px 0;
 }
 
 .content p {
@@ -76,7 +77,7 @@
 .line {
     display: inline-block;
     width: 330px;
-    height: 3px;
+    height: 2px;
     background-color: #00BAFF;
     margin: 15px 0 36px 0;
 }
@@ -89,7 +90,7 @@
     font-size: 18px;
     line-height: 24px;
     display: inline-block;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 .button {
@@ -114,7 +115,11 @@
     .card,
     .card:nth-child(2n) {
         flex-direction: column-reverse;
-        margin-block: 30px;
+        margin-block: 30px 64px;
+    }
+
+    .card:nth-child(2n){
+        margin-block: 30px 24px;
     }
 
     .image {

@@ -109,6 +109,7 @@
     text-decoration: none;
     color: #646464;
     font-size: 24px;
+    font-weight: 500;
     line-height: 28px;
     transition: color 0.3s ease;
     margin-bottom: 32px;
@@ -120,6 +121,8 @@
 
 .socialMedia p {
     font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
     margin-bottom: 20px;
 }
 
@@ -135,6 +138,8 @@
 }
 
 .contactSection {
+    font-size: 24px;
+    font-weight: 500;
     text-align: left;
     margin-top: 30px;
 }
@@ -226,10 +231,6 @@
 
     .linksList li {
         margin-bottom: 20px;
-    }
-
-    .linksList li a {
-        font-size: 20px;
     }
 
     .socialLinks {
