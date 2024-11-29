@@ -6,6 +6,8 @@ import Hero from './components/hero/Hero';
 import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
 import AgencyServices from './components/agencyServices/AgencyServices.jsx';
+import GetStarted from './components/get-started/GetStarted.jsx';
+import Footer from './components/footer/Footer';
 import appData from './data.json';
 
 import './App.css';
@@ -35,6 +37,8 @@ function App() {
       <Services servicesData={data.services} />
       <Portfolio portfolioData={data.portfolio} />
       <AgencyServices servicesData={data['agency_services']}/>
+      <GetStarted/>
+      <Footer companyData={data.company_data} footerMenu={data.footer_menu} />
     </>
   );
 }
