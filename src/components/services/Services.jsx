@@ -23,14 +23,29 @@ const Services = ({ servicesData }) => {
         <div className={styles.grid}>
           {servicesData.items && servicesData.items.map((item, index) => (
             <div key={index} className={styles.card}>
-              <img src="/src/assets/Icons/chromeye_assignment_checkhighlights_v1.svg" alt="Dynamic Digital Ads" />
+              <img
+                src="/src/assets/Icons/chromeye_assignment_checkhighlights_v1.svg"
+                alt="Dynamic Digital Ads"
+                className={styles.checkIcon}
+              />
               <div className={styles.info}>
                 <h3>{item.title}</h3>
                 <button
                   className={`${styles['expand-button']} ${expandedItems.includes(index) ? styles['expanded'] : ''}`}
                   onClick={() => toggleExpand(index)}
                 >
-                  {expandedItems.includes(index) ? '-' : '+'}
+                  {expandedItems.includes(index)
+                    ? (<img
+                      src="/src/assets/Icons/chromeye_assignment_minus_v1.svg"
+                      alt="Plus icon"
+                      className={styles.operatorIcon}
+                    />)
+                    : (<img
+                      src="/src/assets/Icons/chromeye_assignment_plus_v1.svg"
+                      alt="Minus icon"
+                      className={styles.operatorIcon}
+                    />)
+                  }
                 </button>
               </div>
               <p className={`${styles['service-description']} ${expandedItems.includes(index) ? styles['expanded'] : ''}`}>
