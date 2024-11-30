@@ -8,19 +8,30 @@ import Portfolio from './components/portfolio/Portfolio';
 import AgencyServices from './components/agency-services/AgencyServices.jsx';
 import GetStarted from './components/get-started/GetStarted.jsx';
 import Footer from './components/footer/Footer';
+import appData from './data.json';
 
 import './App.css';
 
 function App() {
   const [data, setData] = useState(null);
 
- useEffect(() => {
-   const getData = async () => {
-      const result = await fetchData();
-      setData(result);
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const result = await fetchData(); 
+        if (result) {
+          setData(result); 
+        } else {
+          console.warn("No data from server, using fallback data"); 
+          setData(appData); 
+        }
+      } catch (error) {
+        console.error("Failed to fetch data from the server:", error);
+        setData(appData); 
+      }
     };
-    getData();
-    
+
+    getData(); 
   }, []);
 
   if (!data) {
