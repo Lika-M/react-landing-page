@@ -104,6 +104,13 @@
   width: 32px;
   transition: transform 0.3s ease;
 }
+.arrow {
+  transition: transform 0.3s ease; 
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
 
 .expandButton.expanded img {
   background-color: #EDEDED;

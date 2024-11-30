@@ -25,9 +25,10 @@ const AgencyServices = ({ servicesData }) => {
                                             className={`${styles.expandButton} ${expandedIndex === index ? styles.expanded : ''}`}
                                             onClick={() => toggleExpand(index)}
                                         >
-                                            {expandedIndex === index
-                                                ? (<img src="/assets/Icons/chromeye_assignment_arrowup_v1.svg"></img>)
-                                                : (<img src="/assets/Icons/chromeye_assignment_arrowdown_v1.svg"></img>)}
+                                            <img
+                                                src="/assets/Icons/chromeye_assignment_arrowdown_v1.svg"
+                                                className={`${styles.arrow} ${expandedIndex === index ? styles.rotated : ''}`}
+                                            />
                                         </button>
                                     </div>
                                 </div>
@@ -36,7 +37,7 @@ const AgencyServices = ({ servicesData }) => {
                                 </div>
                             </div>
                         ))}
-                          <p className={styles.line}></p>
+                        <p className={styles.line}></p>
                     </div>
                     <div>
                         <img src={servicesData.items[2].image} alt={servicesData.items[2].title} className={styles.image} />
