@@ -31,7 +31,7 @@
     font-size: 16px;
     text-transform: uppercase;
     color: white;
-    padding: 24px 30px;
+    padding: 20px 25px;
     border-radius: 4px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
     border: none;
@@ -170,22 +170,8 @@
     color: #0f5a7e;
 }
 
-.socialIcon {
-    font-size: 14px;
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-.socialIcon:hover {
-    color: #1c73a8;
-}
-
 @media screen and (max-width: 480px) {
-    /*  .footer {
-        padding: 20px 0;
-    }*/
-
+   
     .container {
         max-width: 480px;
         gap: 20px;

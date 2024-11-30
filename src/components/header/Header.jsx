@@ -27,16 +27,10 @@ const Header = ({ logo, menuItems }) => {
                             <Bars3Icon className={styles.icon} />
                         )}
                     </button>
-                    <ul
-                        className={`${styles.navList} ${isOpen ? styles.navOpen : ''
-                            }`}
-                    >
+                    <ul className={`${styles.navList} ${isOpen ? styles.navOpen : ''}`}>
                         {(menuItems || []).map((item, index) => (
                             <li key={index} className={styles.navItem}>
-                                <a
-                                    href={item.url}
-                                    className={styles.navLink}
-                                >
+                                <a href={item.url} className={styles.navLink}>
                                     {item.name}
                                 </a>
                                 <div className={styles.line}></div>

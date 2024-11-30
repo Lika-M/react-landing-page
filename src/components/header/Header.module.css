@@ -27,6 +27,7 @@
     list-style: none;
     display: flex;
     align-items: center;
+    padding-top: 3px;
 }
 
 .navItem {
@@ -49,6 +50,10 @@
     height: 2px;
     background-color: #EDEDED;
     display: none;
+}
+
+.navItem:first-of-type a {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .navItem:last-child {
