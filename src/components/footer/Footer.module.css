@@ -171,6 +171,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    .footer {
+        max-width: 480px;
+        width: 100%;
+    }
    
     .container {
         max-width: 480px;

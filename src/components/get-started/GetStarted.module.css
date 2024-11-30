@@ -51,6 +51,8 @@
 
 @media screen and (max-width: 480px) {
     .ready {
+        max-width: 480px;
+        width: 100%;
         background: url('../../assets/chromeye_assignment_mobilebgbanner_v1.svg') no-repeat center center;
         padding: 60px 0;
     }

@@ -76,6 +76,8 @@
 
 @media screen and (max-width: 480px) {
     .header {
+        max-width: 480px;
+        width: 100%;
         padding-block: unset;
     }
 
@@ -120,6 +122,10 @@
     .line {
         display: block;
         margin: 20px auto 0 auto;
+    }
+
+    .navItem:first-of-type a {
+        text-shadow:unset;
     }
 
     .navItem:nth-last-child(-n+2) .line {

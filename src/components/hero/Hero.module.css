@@ -11,7 +11,7 @@
   margin: 0 auto;
 }
 
-.content{
+.content {
   margin: auto;
   flex-basis: 48%;
 }
@@ -27,7 +27,7 @@
 .description {
   font-size: 18px;
   margin-bottom: 36px;
-  line-height:24px;
+  line-height: 24px;
   margin-right: 50px;
 }
 
@@ -40,7 +40,7 @@
   text-transform: uppercase;
   padding: 20px 32px;
   border-radius: 4px;
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2) ;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
   border: none;
   cursor: pointer;
 }
@@ -57,8 +57,9 @@
   height: auto;
 }
 
-@media screen and (max-width: 480px){
-  .hero{
+@media screen and (max-width: 480px) {
+  .hero {
+    max-width: 480px;
     width: 100%;
     text-align: center;
     background: linear-gradient(180deg, #fdc0b7 0%, #d2ccff 50%, #6bb4fd 100%);
