@@ -24,7 +24,7 @@ const Services = ({ servicesData }) => {
           {servicesData.items && servicesData.items.map((item, index) => (
             <div key={index} className={styles.card}>
               <img
-                src="/src/assets/Icons/chromeye_assignment_checkhighlights_v1.svg"
+                src="/assets/Icons/chromeye_assignment_checkhighlights_v1.svg"
                 alt="Dynamic Digital Ads"
                 className={styles.checkIcon}
               />
@@ -36,12 +36,12 @@ const Services = ({ servicesData }) => {
                 >
                   {expandedItems.includes(index)
                     ? (<img
-                      src="/src/assets/Icons/chromeye_assignment_minus_v1.svg"
+                      src="/assets/Icons/chromeye_assignment_minus_v1.svg"
                       alt="Plus icon"
                       className={styles.operatorIcon}
                     />)
                     : (<img
-                      src="/src/assets/Icons/chromeye_assignment_plus_v1.svg"
+                      src="/assets/Icons/chromeye_assignment_plus_v1.svg"
                       alt="Minus icon"
                       className={styles.operatorIcon}
                     />)

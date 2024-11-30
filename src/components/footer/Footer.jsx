@@ -51,7 +51,7 @@ const Footer = ({ companyData, footerMenu }) => {
                     rel="noopener noreferrer"
                     className={styles.socialIcon}>
                     <img
-                      src="/src/assets/Icons/chromeye_assignment_facebookicon_v1.svg"
+                      src="/assets/Icons/chromeye_assignment_facebookicon_v1.svg"
                       alt="Facebook"
                     />
                   </a>
@@ -62,7 +62,7 @@ const Footer = ({ companyData, footerMenu }) => {
                     rel="noopener noreferrer"
                     className={styles.socialIcon}>
                     <img
-                      src="/src/assets/Icons/chromeye_assignment_twittericon_v1.svg"
+                      src="/assets/Icons/chromeye_assignment_twittericon_v1.svg"
                       alt="Twitter"
                     />
                   </a>
@@ -73,7 +73,7 @@ const Footer = ({ companyData, footerMenu }) => {
                     rel="noopener noreferrer"
                     className={styles.socialIcon}>
                     <img
-                      src="/src/assets/Icons/chromeye_assignment_linkedinicon_v1.svg"
+                      src="/assets/Icons/chromeye_assignment_linkedinicon_v1.svg"
                       alt="LinkedIn"
                     />
                   </a>

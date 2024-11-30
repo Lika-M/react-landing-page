@@ -26,8 +26,8 @@ const AgencyServices = ({ servicesData }) => {
                                             onClick={() => toggleExpand(index)}
                                         >
                                             {expandedIndex === index
-                                                ? (<img src="/src/assets/Icons/chromeye_assignment_arrowup_v1.svg"></img>)
-                                                : (<img src="/src/assets/Icons/chromeye_assignment_arrowdown_v1.svg"></img>)}
+                                                ? (<img src="/assets/Icons/chromeye_assignment_arrowup_v1.svg"></img>)
+                                                : (<img src="/assets/Icons/chromeye_assignment_arrowdown_v1.svg"></img>)}
                                         </button>
                                     </div>
                                 </div>
