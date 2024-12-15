@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
+
+import Button from '../../ui/button/Button.jsx';
 import styles from './Services.module.css';
 
 const Services = ({ servicesData }) => {
@@ -54,10 +56,8 @@ const Services = ({ servicesData }) => {
             </div>
           ))}
         </div>
-        <div className={styles.button}>
-          <a href={servicesData.buttonUrl} className={styles['cta-button']}>
-            {servicesData.buttonLabel}
-          </a>
+        <div className={styles['cta-button']}>
+          <Button url={servicesData.buttonUrl} label={servicesData.buttonLabel} />
         </div>
       </div>
     </section >

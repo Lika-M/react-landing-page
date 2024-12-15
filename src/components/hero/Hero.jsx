@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import Button from '../../ui/button/Button.jsx';
 import styles from './Hero.module.css';
 
 
@@ -11,9 +12,7 @@ const Hero = ({ heroData }) => {
                         {heroData.title}
                     </h1>
                     <p className={styles.description}>{heroData.description}</p>
-                    <a href={heroData.buttonUrl} className={styles.ctaButton}>
-                        {heroData.buttonLabel}
-                    </a>
+                    <Button url={heroData.buttonUrl} label={heroData.buttonLabel}/>
                 </div>
                 <div className={styles.image}>
                     <img src={heroData.image} alt={heroData.title} />

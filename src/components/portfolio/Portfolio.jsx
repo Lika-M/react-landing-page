@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import Button from '../../ui/button/Button.jsx';
 import styles from './Portfolio.module.css';
 
 const Portfolio = ({ portfolioData }) => {
@@ -18,9 +19,7 @@ const Portfolio = ({ portfolioData }) => {
                             <p className={styles.line}></p>
                             <p className={styles.cardDescription}>{item.description}</p>
                             <div>
-                                <a href={item.buttonUrl} className={styles.button}>
-                                    {item.buttonLabel}
-                                </a>
+                                <Button url={item.buttonUrl} label={item.buttonLabel} />
                             </div>
                         </div>
                         <div>

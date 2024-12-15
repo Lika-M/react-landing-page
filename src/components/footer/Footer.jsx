@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import Button from '../../ui/button/Button.jsx';
 import styles from './Footer.module.css';
 
 const Footer = ({ companyData, footerMenu }) => {
@@ -14,9 +15,7 @@ const Footer = ({ companyData, footerMenu }) => {
             </a>
           </div>
           <div>
-            <a href="#" className={styles.button}>
-              Request a Call
-            </a>
+            <Button url="javascript:void(0)" label={"Request a Call"} className={styles['cta-button']} />
           </div>
         </div>
         <div className={styles.linksSection}>
