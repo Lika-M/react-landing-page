@@ -1,3 +1,4 @@
+import Button from '../../ui/button/Button.jsx';
 import styles from './GetStarted.module.css';
 
 const GetStarted = () => {
@@ -9,7 +10,7 @@ const GetStarted = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique sed
           scelerisque arcu scelerisque ultrices habitant ac semper lorem.
         </p>
-        <button className={styles.ctaButton}>Request a Call</button>
+        <Button url="javascript:void(0)" label={"Request a Call"} className={styles['cta-button']} />
       </div>
     </section>
   );

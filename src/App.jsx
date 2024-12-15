@@ -18,7 +18,8 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const result = await fetchData(); 
+        const result = null
+        // const result = await fetchData(); 
         if (result) {
           setData(result); 
         } else {

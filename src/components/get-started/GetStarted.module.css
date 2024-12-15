@@ -6,47 +6,37 @@
 }
 
 .container {
-    background-color: #fff;
+    background-color: var(--bg-color-white);
     opacity: 0.9;
     max-width: 900px;
     height: 300px;
     margin: 0 auto;
-    padding: 25px 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: var(--border-radius-big);
 }
 
 .title {
-    color: #1C73A8;
-    font-size: 44px;
-    font-weight: 700;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2)
+    color: var(--color-secondary);
+    font-size: var(--font-size-heading-large);
+    font-weight: --font-weight-bold;
+    line-height: var(--line-height-extra-large);
+    text-shadow: var(--shadow-medium);
 }
 
 .description {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #1C73A8;
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-regular);
+    color: var(--color-secondary);
     margin-bottom: 40px;
     max-width: 800px;
     margin: 10px 130px 20px 130px;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2)
+    text-shadow: var(--shadow-medium);
 }
 
-.ctaButton {
-    background-color: #646464;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: white;
-    padding: 25px 30px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-    border: none;
-    cursor: pointer;
-}
-
-.ctaButton:hover {
-    background-color: #e0f7ff;
-    color: #005f87;
+.cta-button {
+    background-color: var(--bg-color-dark-grey);
+    font-size: var(--font-size-body);
+    padding: 23.5px 41.6px;
 }
 
 @media screen and (max-width: 480px) {
@@ -59,12 +49,11 @@
     .container {
         max-width: 430px;
         height: 372px;
+        padding: 30px 10px;
     }
 
     .description {
-        margin: 0;
-        line-height: 24px;
-        margin-bottom: 28px;
+        margin: 25px 0;
+        line-height: var(--line-height-medium);
     }
-
 }

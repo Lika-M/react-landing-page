@@ -1,6 +1,6 @@
 .portfolio {
     max-width: 1280px;
-    background-color: white;
+    background-color: var(--bg-color-white);
     text-align: center;
     margin: 0 auto;
 }
@@ -15,20 +15,20 @@
 }
 
 .headings h2 {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-weight-bold);
     margin-bottom: 32px;
 }
 
 .headings p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-medium);
     display: inline-block;
     margin-bottom: 44px;
 }
 
 .card {
-    max-width: 1280px;
+    width: 100%;;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -55,8 +55,8 @@
 }
 
 .content h2 {
-    font-size: 36px;
-    font-weight: 700;
+    font-size: var(--font-size-heading2);
+    font-weight: var(--font-weight-bold);
     margin-block: 15px 0;
 }
 
@@ -78,7 +78,7 @@
     display: inline-block;
     width: 330px;
     height: 2px;
-    background-color: #00BAFF;
+    background-color: var(--bg-color-primary);
     margin: 15px 0 36px 0;
 }
 
@@ -87,30 +87,24 @@
 }
 
 .cardDescription {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-medium);
     display: inline-block;
     margin-bottom: 32px;
-}
-
-.button {
-    display: inline-block;
-    text-align: center;
-    font-size: 18px;
-    color: white;
-    background-color: #00BAFF;
-    text-transform: uppercase;
-    padding: 20px 32px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
-    border: none;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
     .portfolio {
         max-width: 480px;
         width: 100%;
+    }
+
+    .headings h2 {
+        margin-bottom: 30px;
+    }
+
+    .headings p {
+        margin-bottom: 40px;
     }
 
     .card,
@@ -143,6 +137,8 @@
 
     .line:last-of-type {
         margin-top: 0;
+        margin-inline: auto;
+        width: 90%;
         display: inline-block;
         padding: 0 20px;
     }

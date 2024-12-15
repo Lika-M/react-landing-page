@@ -17,7 +17,7 @@ blockquote {
 }
 
 ul,
-ol{
+ol {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -31,3 +31,53 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+:root {
+  /* Color Palette */
+  --color-primary: #00BAFF;
+  --color-secondary: #1C73A8;
+  --color-white: #FFFFFF;
+  --color-light-gray: #EDEDED;
+  --color-dark-gray: #646464;
+  --color-black: #000000;
+
+  --bg-color-primary: var(--color-primary);
+  --bg-color-white: var(--color-white);
+  --bg-color-light-grey: var(--color-light-gray);
+  --bg-color-dark-grey: var(--color-dark-gray);
+  --bg-color-linear-gradient-base: #FDC0B7CC 0%, #D2CCFFCC 50%, #6BB4FDCC 100%;
+  --bg-color-linear-gradient-1: linear-gradient(90deg, var(--bg-color-linear-gradient-base));
+  --bg-color-linear-gradient-2: linear-gradient(180deg, var(--bg-color-linear-gradient-base));
+
+  /* Font Weights */
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+
+  /* Font Sizes */
+  --font-size-heading-large: 44px;
+  --font-size-heading1: 40px;
+  --font-size-heading2: 38px;
+  --font-size-heading3: 24px;
+  --font-size-large: 20px;
+  --font-size-medium: 18px;
+  --font-size-body: 16px;
+
+  /* Line Hights */
+  --line-height-extra-large: 48px;
+  --line-height-large: 28px;
+  --line-height-regular: 1.6;
+  --line-height-medium: 24px;
+
+  /* Shadows */
+  --shadow-text: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-menu: inset 0px 2px 7px rgba(0, 0, 0, 0.1);
+
+  --shadow-small: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  --shadow-large: 0px 6px 12px rgba(0, 0, 0, 0.2);
+
+  /* Border Radius */
+  --border-radius-small: 4px;
+  --border-radius-big: 10px;
+}
