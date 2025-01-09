@@ -5,8 +5,11 @@ A responsive landing page built with **React**, based on a **Figma design**.
 ## 🌐 **Live Demo**  
 🔗 [View the project here](https://react-landing-page-chi-six.vercel.app)  
 
-## 📷 **Project Preview**  
-<img src="/public/assets/figma-screenshot.png width="400">
+## 📷 **Project Preview**   
+<img src="public/assets/figma-screenshot.png" width="500">
+
+## 📐 **Original Figma Design**  
+🔗 [See the Figma design](https://www.figma.com/design/eF0RoHarnw9sxtzdhWrHq0/Landing-page?t=IkQMAMgYVEJRdgNA-0)  
 
 ## ✨ **Features**  
 - Fully responsive design  
@@ -17,9 +20,6 @@ A responsive landing page built with **React**, based on a **Figma design**.
 - React  
 - JavaScript (ES6+)  
 - HTML5 & CSS3  
-
-## 📐 **Original Figma Design**  
-🔗 [See the Figma design](https://www.figma.com/design/eF0RoHarnw9sxtzdhWrHq0/Landing-page?t=IkQMAMgYVEJRdgNA-0)  
 
 ---
 
