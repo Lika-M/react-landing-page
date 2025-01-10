@@ -9,9 +9,8 @@
     background-color: var(--bg-color-white);
     opacity: 0.9;
     max-width: 900px;
-    height: 300px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 32px;
     border-radius: var(--border-radius-big);
 }
 
@@ -27,9 +26,10 @@
     font-size: var(--font-size-medium);
     line-height: var(--line-height-regular);
     color: var(--color-secondary);
+    max-width: 590px;
     margin-bottom: 40px;
-    max-width: 800px;
-    margin: 10px 130px 20px 130px;
+    /* max-width: 800px; */
+    margin: 10px auto 20px auto;
     text-shadow: var(--shadow-medium);
 }
 
@@ -39,6 +39,24 @@
     padding: 23.5px 41.6px;
 }
 
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 30px 10px;
+    }
+
+    .description {
+        margin: 25px auto;
+        line-height: var(--line-height-medium);
+    }
+}
+
 @media screen and (max-width: 480px) {
     .ready {
         max-width: 480px;
@@ -46,14 +64,10 @@
         background: url('../../assets/chromeye_assignment_mobilebgbanner_v1.svg') no-repeat center center;
         padding: 60px 0;
     }
+
     .container {
         max-width: 430px;
-        height: 372px;
-        padding: 30px 10px;
-    }
-
-    .description {
-        margin: 25px 0;
-        line-height: var(--line-height-medium);
+        /* height: 372px; */
+        /* padding: 30px 10px; */
     }
 }

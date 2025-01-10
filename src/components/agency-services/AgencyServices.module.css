@@ -130,6 +130,55 @@
 .description.expanded {
   max-height: 1000px;
   padding: 10px 20px 20px 20px;
+  
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 80%;
+  }
+
+  .accordion {
+    padding: 0 20px;
+    flex-basis: 60%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    padding: 0 40px;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column-reverse;
+    padding: unset;
+  }
+
+  .container {
+    width: 80%;
+  }
+  .accordion {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .accordion {
+    padding: 0 20px;
+  }
+  .expandButton img {
+    width: 28px;
+  }
+
+  .wrapper img {
+    width: 90%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -141,16 +190,6 @@
 
   .container {
     width: 100%;
-  }
-
-  .wrapper {
-    flex-direction: column-reverse;
-    padding: unset;
-  }
-
-  .wrapper img {
-    width: 90%;
-    height: auto;
   }
 
   .accordion {
