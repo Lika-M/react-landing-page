@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 
+import ServiceCard from '../../ui/service-card/ServiceCard.jsx';
 import Button from '../../ui/button/Button.jsx';
 import styles from './Services.module.css';
 
@@ -24,36 +25,12 @@ const Services = ({ servicesData }) => {
         </div>
         <div className={styles.grid}>
           {servicesData.items && servicesData.items.map((item, index) => (
-            <div key={index} className={styles.card}>
-              <img
-                src="/assets/Icons/chromeye_assignment_checkhighlights_v1.svg"
-                alt="Dynamic Digital Ads"
-                className={styles.checkIcon}
-              />
-              <div className={styles.info}>
-                <h3>{item.title}</h3>
-                <button
-                  className={`${styles['expand-button']} ${expandedItems.includes(index) ? styles['expanded'] : ''}`}
-                  onClick={() => toggleExpand(index)}
-                >
-                  {expandedItems.includes(index)
-                    ? (<img
-                      src="/assets/Icons/chromeye_assignment_minus_v1.svg"
-                      alt="Plus icon"
-                      className={styles.operatorIcon}
-                    />)
-                    : (<img
-                      src="/assets/Icons/chromeye_assignment_plus_v1.svg"
-                      alt="Minus icon"
-                      className={styles.operatorIcon}
-                    />)
-                  }
-                </button>
-              </div>
-              <p className={`${styles['service-description']} ${expandedItems.includes(index) ? styles['expanded'] : ''}`}>
-                {item.description}
-              </p>
-            </div>
+            <ServiceCard
+              key={index}
+              item={item}
+              isExpanded={expandedItems.includes(index)}
+              onToggle={() => toggleExpand(index)}
+            />
           ))}
         </div>
         <div className={styles['cta-button']}>
