@@ -14,29 +14,44 @@ import './App.css';
 
 function App() {
   const [data, setData] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const getData = async () => {
+      setIsLoading(true);
       try {
-        const result = null
-        // const result = await fetchData(); 
+        // const result = null
+        const result = await fetchData();
         if (result) {
-          setData(result); 
+          setData(result);
         } else {
-          console.warn("No data from server, using fallback data"); 
+          console.warn("No data from server, using fallback data");
           setData(appData); 
         }
+        setIsLoading(false);
       } catch (error) {
         console.error("Failed to fetch data from the server:", error);
-        setData(appData); 
+        setData(null);
       }
     };
 
-    getData(); 
+    getData();
   }, []);
 
+  if (isLoading) {
+    return <div className="loader">Loading...</div>;
+  }
+
   if (!data) {
-    return <div className="loader">Loading...</div>; 
+    return (
+      <section className="error-container">
+        <div className="error">
+          <h3> Failed to fetch data from the server.</h3>
+          <p>Please try again later.</p>
+        </div>
+      </section>
+    )
+      ;
   }
 
   return (
@@ -45,8 +60,8 @@ function App() {
       <Hero heroData={data.hero} />
       <Services servicesData={data.services} />
       <Portfolio portfolioData={data.portfolio} />
-      <AgencyServices servicesData={data['agency_services']}/>
-      <GetStarted/>
+      <AgencyServices servicesData={data['agency_services']} />
+      <GetStarted />
       <Footer companyData={data.company_data} footerMenu={data.footer_menu} />
     </>
   );

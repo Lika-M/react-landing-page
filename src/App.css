@@ -4,4 +4,41 @@
     align-items: center;
     height: 100vh;
     font-size: 20px;
+    color: var(--bg-color-dark-grey);
+}
+
+.error-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.error {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: var(--color-light-gray);
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--bg-color-dark-grey);
+}
+
+.error h3 {
+    font-size: var(--font-size-medium);
+    color: var(--color-red);
+    text-align: center;
+}
+
+.error p {
+    font-size: var(--font-size-body);
+}
+
+@media screen and (max-width: 768px) {
+    .error {
+        width: 300px;
+    }
 }

@@ -39,6 +39,7 @@ html {
   --color-light-gray: #EDEDED;
   --color-dark-gray: #646464;
   --color-black: #000000;
+  --color-red: #C44141;
 
   --bg-color-primary: var(--color-primary);
   --bg-color-white: var(--color-white);
