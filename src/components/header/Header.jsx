@@ -8,6 +8,8 @@ const Header = ({ logo, menuItems }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [isAnimating, setIsAnimating] = useState(false);
 
+    const sortedItems = menuItems.sort((a, b) => a.order - b.order);
+
     const onToggle = () => {
         setIsAnimating(true);
         if (isOpen) {
@@ -16,6 +18,21 @@ const Header = ({ logo, menuItems }) => {
             setIsOpen(true);
         }
     };
+
+    const handleLinkClick = (e, url) => {
+        if (url.startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(url);
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop,
+              behavior: 'smooth'
+            });
+            setIsOpen(false);
+          }
+        }
+      };
+      
 
     return (
         <header
@@ -40,10 +57,10 @@ const Header = ({ logo, menuItems }) => {
                         className={`${styles.navList} 
                         ${isAnimating && (isOpen ? styles.navOpen : styles.navClose)}`}
                     >
-                        {(menuItems || []).map((item, index) => (
-                            index !== menuItems.length - 1 ? (
+                        {(sortedItems || []).map((item, index) => (
+                            index !== sortedItems.length - 1 ? (
                                 <li key={index} className={styles.navItem}>
-                                    <a href={item.url} className={styles.navLink}>
+                                    <a href={item.url} className={styles.navLink} onClick={(e) => handleLinkClick(e, item.url)}>
                                         {item.name}
                                     </a>
                                     <div className={styles.line}></div>

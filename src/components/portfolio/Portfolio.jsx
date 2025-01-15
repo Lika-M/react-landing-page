@@ -3,10 +3,9 @@ import Button from '../../ui/button/Button.jsx';
 import styles from './Portfolio.module.css';
 
 const Portfolio = ({ portfolioData }) => {
-    console.log(portfolioData)
-
+    
     return (
-        <section className={styles.portfolio}>
+        <section id="portfolio" className={styles.portfolio}>
             <div className={styles.headings}>
                 <h2>{portfolioData.title}</h2>
                 <p>{portfolioData.description}</p>

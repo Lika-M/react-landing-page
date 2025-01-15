@@ -3,7 +3,7 @@ import styles from './GetStarted.module.css';
 
 const GetStarted = () => {
   return (
-    <section className={styles.ready}>
+    <section id="ready" className={styles.ready}>
       <div className={styles.container}>
         <h2 className={styles.title}>Ready to Get Started</h2>
         <p className={styles.description}>

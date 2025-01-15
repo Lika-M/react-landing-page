@@ -17,7 +17,7 @@ const Services = ({ servicesData }) => {
   };
 
   return (
-    <section className={styles.services}>
+    <section id="services" className={styles.services}>
       <div className={styles.container}>
         <div className={styles.headings}>
           <h2>{servicesData.title}</h2>

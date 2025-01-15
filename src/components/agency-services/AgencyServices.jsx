@@ -10,7 +10,7 @@ const AgencyServices = ({ servicesData }) => {
     };
 
     return (
-        <section className={styles.agencyServices}>
+        <section id="agency" className={styles.agencyServices}>
             <h2 className={styles.title}>{servicesData.title}</h2>
             <div className={styles.container}>
                 <div className={styles.wrapper}>

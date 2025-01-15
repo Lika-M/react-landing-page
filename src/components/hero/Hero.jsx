@@ -5,7 +5,7 @@ import styles from './Hero.module.css';
 
 const Hero = ({ heroData }) => {
     return (
-        <section className={styles.hero}>
+        <section id="hero" className={styles.hero}>
             <div className={styles.heroContainer}>
                 <div className={styles.content}>
                     <h1 className={styles.title}>
