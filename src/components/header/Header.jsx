@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
+
+import { handleLinkClick } from '../../util/navigationUtils.js';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 import Button from '../../ui/button/Button.jsx';
 import styles from './Header.module.css';
@@ -18,21 +20,6 @@ const Header = ({ logo, menuItems }) => {
             setIsOpen(true);
         }
     };
-
-    const handleLinkClick = (e, url) => {
-        if (url.startsWith('#')) {
-          e.preventDefault();
-          const target = document.querySelector(url);
-          if (target) {
-            window.scrollTo({
-              top: target.offsetTop,
-              behavior: 'smooth'
-            });
-            setIsOpen(false);
-          }
-        }
-      };
-      
 
     return (
         <header
@@ -60,7 +47,7 @@ const Header = ({ logo, menuItems }) => {
                         {(sortedItems || []).map((item, index) => (
                             index !== sortedItems.length - 1 ? (
                                 <li key={index} className={styles.navItem}>
-                                    <a href={item.url} className={styles.navLink} onClick={(e) => handleLinkClick(e, item.url)}>
+                                    <a href={item.url} className={styles.navLink} onClick={(e) => handleLinkClick(e, item.url, setIsOpen)}>
                                         {item.name}
                                     </a>
                                     <div className={styles.line}></div>

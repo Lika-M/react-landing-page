@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { handleLinkClick } from '../../util/navigationUtils.js';
 import Button from '../../ui/button/Button.jsx';
 import styles from './Footer.module.css';
 
@@ -23,7 +24,7 @@ const Footer = ({ companyData, footerMenu }) => {
             <ul className={styles.linksList}>
               {sortedMenu.slice(0, Math.ceil(sortedMenu.length / 2)).map((menuItem) => (
                 <li key={menuItem.name}>
-                  <a href={menuItem.url}>{menuItem.name}</a>
+                  <a href={menuItem.url} onClick={(e) => handleLinkClick(e, menuItem.url, null)}>{menuItem.name}</a>
                   {menuItem.name === "Information" && (
                     <p>{companyData.intro}</p>
                   )}
@@ -35,7 +36,7 @@ const Footer = ({ companyData, footerMenu }) => {
             <ul className={styles.linksList}>
               {sortedMenu.slice(Math.ceil(sortedMenu.length / 2)).map((menuItem) => (
                 <li key={menuItem.name}>
-                  <a href={menuItem.url}>{menuItem.name}</a>
+                 <a href={menuItem.url} onClick={(e) => handleLinkClick(e, menuItem.url, null)}>{menuItem.name}</a>
                 </li>
               ))}
             </ul>
